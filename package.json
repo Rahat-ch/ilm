@@ -1,0 +1,14 @@
+{
+  "name": "ilm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:quran": "python3 scripts/fetch_quran.py",
+    "fetch:hadith": "tsx scripts/fetch_hadith.ts",
+    "verify:data": "tsx scripts/verify_data.ts",
+    "fetch:all": "npm run fetch:quran && npm run fetch:hadith && npm run verify:data"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}
